@@ -31,7 +31,7 @@ public class SingletonPattern {
         System.out.println("Value of singleton: " + singleton.getValue());
         System.out.println("Value of anotherSingleton: " + anotherSingleton.getValue());
 
-        System.out.println();
+        
         if(singleton == anotherSingleton){
             System.out.println("Point to the same instance in memory");
         }else{
