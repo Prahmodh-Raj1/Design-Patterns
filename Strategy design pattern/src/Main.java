@@ -1,11 +1,12 @@
+package Strategy_Pattern;
+
 public class Main {
     public static void main(String[] args) {
-
-        Car car1 = new SUV();
-        Car car2 = new SedanRoad();
-        Car car3 = new CustomCar();
-        car1.drive();
-        car2.drive();
-        car3.drive();
+        Vehicle vehicle = new SportsVehicle();
+        vehicle.drive(); //applying overriding of the default method
+        Vehicle vehicle1 = new GoodsVehicle();
+        vehicle1.drive();
+        Vehicle vehicle2 = new OffRoadVehicle();
+        vehicle2.drive();
     }
 }
